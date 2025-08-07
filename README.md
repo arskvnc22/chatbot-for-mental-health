@@ -140,7 +140,8 @@ To teach distinct styles, synthetic datasets were created.
 1,100+ styled examples per persona, with RAG context
 
 > _Diagram of the data generation pipeline:_  
-> _(Your diagram can be placed here)_
+> _(<img width="777" height="326" alt="image" src="https://github.com/user-attachments/assets/c0f5225d-a09e-4742-91c1-084f3a97874c" />
+)_
 
 ---
 
@@ -153,12 +154,12 @@ Used for enhanced nuance in "therapist-like" style.
 - Richer language
 - Introduced artifacts and safety concerns
 - Demonstrated the tension between safety and stylistic realism
-
+- Demonstrated the difference between training on synthetic and real world data
 ---
 
 ## 🚀 Getting Started
 
-To run ThriveBot locally:
+To run ThriveBot:
 
 ### Prerequisites
 
@@ -169,8 +170,8 @@ To run ThriveBot locally:
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/ThriveBot.git
-cd ThriveBot
+git clone https://github.com/arskvnc22/chatbot-for-mental-health.git
+cd chatbot-for-mental-health
 pip install -r requirements.txt
 ```
 
@@ -182,11 +183,8 @@ export HUGGING_FACE_HUB_TOKEN='your_hf_token_here'
 4. Running the Application
 Launch the Gradio web interface with the following command:
 
-python app.py
 
-Navigate to the local URL provided by Gradio (e.g., http://127.0.0.1:7860) in your web browser to start chatting with ThriveBot.
-
-⚖️ Ethical Considerations
+### ⚖️ Ethical Considerations
 Developing an AI for mental health support carries significant ethical responsibilities. This project was guided by the following principles:
 
 User Safety: The system is designed to avoid providing medical diagnoses, handling crisis situations, or generating harmful content. Clear disclaimers are provided.
@@ -197,7 +195,7 @@ Data Scarcity & Bias: The project acknowledges the limitations of available data
 
 Transparency: This README and the accompanying report aim to be fully transparent about the model's capabilities, limitations, and the trade-offs discovered during research.
 
-🔮 Future Work
+### 🔮 Future Work
 This project lays the groundwork for several exciting future directions:
 
 Improved Datasets: The most critical next step is the creation of high-quality, ethically sourced, and expert-validated datasets for fine-tuning therapeutic conversational styles.
@@ -208,11 +206,11 @@ Enhanced Safety Protocols: Integrating more robust mechanisms for detecting user
 
 Long-Term Memory: Exploring methods for the chatbot to have a longer, more coherent memory of the conversation.
 
-🙏 Acknowledgements
+### 🙏 Acknowledgements
 This project was submitted for the BSc in Computer Science at the University of Hull.
 
 The RAG knowledge base was curated from content by Dr. Andrew Huberman.
 
-The LoRA adapters were trained using the Empathetic Dialogues and Counsel Chat datasets.
+The LoRA adapters were trained using synthetic datan from the Empathetic Dialogues dataset and the real data from the Counsel Chat dataset.
 
-Special thanks to the consulting psychiatrist for their invaluable feedback and professional evaluation of the model's responses.
+- Special thanks to the consulting psychiatrist for their invaluable feedback and professional evaluation of the model's responses.
